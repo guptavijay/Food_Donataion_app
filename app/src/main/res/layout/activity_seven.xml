@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shalini.foodsave.Seven">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/t11"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Pick Your District"
+        android:textColor="#F4F4F4"
+        android:textSize="30dp"
+        android:background="#9099A2"
+        android:gravity="center"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/b11"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="110dp"
+        android:background="#F4F4F4"
+        android:text="CENTRAL DELHI"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.231" />
+
+    <Button
+        android:id="@+id/b22"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="175dp"
+        android:background="#F4F4F4"
+        android:text="NORTH DELHI"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.231" />
+
+    <Button
+        android:id="@+id/b33"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="SOUTH DELHI"
+        android:textSize="20dp"
+        android:background="#F4F4F4"
+        android:layout_marginTop="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintVertical_bias="0.231" />
+
+    <Button
+        android:id="@+id/b44"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="EAST DELHI"
+        android:textSize="20dp"
+        android:background="#F4F4F4"
+        android:layout_marginTop="305dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintVertical_bias="0.231" />
+
+    <Button
+        android:id="@+id/b55"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="NORTH EAST DELHI"
+        android:textSize="20dp"
+        android:background="#F4F4F4"
+        android:layout_marginTop="370dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintVertical_bias="0.231" />
+
+    <Button
+        android:id="@+id/b66"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="SOUTH WEST DELHI"
+        android:textSize="20dp"
+        android:background="#F4F4F4"
+        android:layout_marginTop="435dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintVertical_bias="0.231" />
+
+    <Button
+        android:id="@+id/b77"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="NEW DELHI"
+        android:textSize="20dp"
+        android:background="#F4F4F4"
+        android:layout_marginTop="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintVertical_bias="0.231" />
+
+    <Button
+        android:id="@+id/b88"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="NORTH WEST DELHI"
+        android:textSize="20dp"
+        android:background="#F4F4F4"
+        android:layout_marginTop="565dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintVertical_bias="0.231" />
+
+    <Button
+        android:id="@+id/b99"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="WEST DELHI"
+        android:textSize="20dp"
+        android:background="#F4F4F4"
+        android:layout_marginTop="630dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintVertical_bias="0.231" />
+
+
+</RelativeLayout>
+</ScrollView>
