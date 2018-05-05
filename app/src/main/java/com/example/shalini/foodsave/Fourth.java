@@ -15,6 +15,7 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 
 public class Fourth extends AppCompatActivity {
@@ -27,7 +28,7 @@ public class Fourth extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fourth);
         t1 = (TextView) findViewById(R.id.t11);
-
+       final Bundle b= getIntent().getExtras();
         t3 = (TextView) findViewById(R.id.t33);
         e1 = (EditText) findViewById(R.id.e11);
         e2 = (EditText) findViewById(R.id.e22);
@@ -37,13 +38,7 @@ public class Fourth extends AppCompatActivity {
         t4 = (TextView) findViewById(R.id.t44);
         b1 = (Button) findViewById(R.id.b11);
         t5 = (TextView) findViewById(R.id.t55);
-        final String s1 = e4.getText().toString();
-        final String s2 = e5.getText().toString();
-        final String s3 = e1.getText().toString();
-        final String s4 = e2.getText().toString();
-        final String s5 = e3.getText().toString();
-        final String s6 = t4.getText().toString();
-        final String s7 = t5.getText().toString();
+
         t4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -82,9 +77,29 @@ public class Fourth extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //
-                if ((s1.isEmpty() && s1.equals(null)) || (s2.isEmpty() && s2.equals(null)) || (s3.isEmpty() && s3.equals(null)) || (s4.isEmpty() && s4.equals(null)) || (s5.isEmpty() && s5.equals(null)) || (s6.isEmpty() && s6.equals(null)) || (s7.isEmpty() && s7.equals(null))) {
+                final String s1 = e4.getText().toString();
+                final String s2 = e5.getText().toString();
+                final String s3 = e1.getText().toString();
+                final String s4 = e2.getText().toString();
+                final String s5 = e3.getText().toString();
+                final String s6 = t4.getText().toString();
+                final String s7 = t5.getText().toString();
+                if ((s1.isEmpty()) || (s2.isEmpty()) || (s3.isEmpty()) || (s4.isEmpty() ) || (s5.isEmpty()) || (s6.isEmpty()) || (s7.isEmpty())) {
+
+
                     Toast.makeText(Fourth.this, "Please Fill All the Details!!", Toast.LENGTH_SHORT).show();
                 } else {
+                    Intent i2= new Intent(Fourth.this,Eight.class);
+                    ArrayList<String> l2= (ArrayList<String>)getIntent().getSerializableExtra("arr"); // list of contact numbers
+                    i2.putExtra("one",s1);
+                    i2.putExtra("three",s2);
+                    i2.putExtra("two",s3);
+                    i2.putExtra("four",s4);
+                    i2.putExtra("five",s5);
+                    i2.putExtra("six",s6);
+                    i2.putExtra("seven",s7);
+                    i2.putExtra("finallist",l2);
+                    startActivity(i2);
 
                 }
             }

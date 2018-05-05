@@ -12,6 +12,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
 
     <application
         android:allowBackup="true"
@@ -55,11 +56,35 @@
             android:name=".First"
             android:configChanges="orientation"
             android:screenOrientation="portrait" />
-        <activity android:name=".Sixth" />
-        <activity android:name=".Seven" />
-        <activity android:name=".Firstone" />
-        <activity android:name=".Firsttwo" />
-        <activity android:name=".Firstthree"></activity>
+        <activity
+            android:name=".Sixth"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Seven"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Firstone"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Firsttwo"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Firstthree"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Eight"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".Ninth"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            ></activity>
     </application>
 
 </manifest>

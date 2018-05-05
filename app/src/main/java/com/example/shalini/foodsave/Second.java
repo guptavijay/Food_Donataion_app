@@ -1,26 +1,45 @@
 package com.example.shalini.foodsave;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
 
-public class Second extends AppCompatActivity {
+
+public class Second extends AppCompatActivity{
 ViewFlipper vf;
     TextView t1;
-    Button b1;
+    Button b1,b2;
+  //  private Toolbar mtoolbar;
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_second);
+  /*    mtoolbar=(Toolbar)findViewById(R.id.nav_action);
+       setSupportActionBar(mtoolbar);
+
+        LayoutInflater inflater= (LayoutInflater)this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View contentView = inflater.inflate(R.layout.navigation_action,null,false);
+        mdrawerlayout.addView(contentView,0);
+*/
      vf=(ViewFlipper)findViewById(R.id.vf11);
         t1=(TextView)findViewById(R.id.t11);
         b1=(Button)findViewById(R.id.b11);
+        b2=(Button)findViewById(R.id.b22);
         t1.setText("Over 20 crore Indians will sleep hungry tonight, of which 7 crores are children under 5 years.THINK BEFORE WASTING FOOD.!!");
 b1.setOnClickListener(new View.OnClickListener() {
     @Override
@@ -79,5 +98,21 @@ builder.show();
 
     }
 });
+
+  b2.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+          SharedPreferences pref= getSharedPreferences("user info", Context.MODE_PRIVATE);   //  user info is the name of file in which login s=details are stored
+          SharedPreferences.Editor editor= pref.edit();
+          editor.clear();
+          editor.commit();
+          finish();
+
+          //  String a=  pref.getString("initial1"," ");
+          //Toast.makeText(Ninth.this,a,Toast.LENGTH_LONG).show();
+          Intent i3=new Intent(Second.this,First.class);
+          startActivity(i3);
+      }
+  });
     }
 }

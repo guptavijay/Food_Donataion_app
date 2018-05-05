@@ -3,25 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#D5D5D5"
+
     android:layout_height="match_parent"
     tools:context="com.example.shalini.foodsave.Third">
 
     <EditText
         android:id="@+id/e11"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Name"
-        android:textSize="20dp"
-        android:textColor="#000000"
+        android:hint="UserName:"
         android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.12" />
+        app:layout_constraintVertical_bias="0.22" />
 
     <TextView
         android:id="@+id/t11"
@@ -39,28 +40,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.033" />
 
-    <EditText
-        android:id="@+id/e22"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:textColor="#000000"
-        android:hint="Phone No."
-        android:textSize="20dp"
-        android:inputType="phone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.349" />
-
     <Button
         android:id="@+id/b11"
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        android:text="Submit"
-        android:background="#1D2731"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:text="SIGN UP"
+        android:background="#286DA8"
         android:textColor="#F5F5F5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -71,81 +56,79 @@
 
     <TextView
         android:id="@+id/t22"
-        android:layout_width="150dp"
-        android:layout_marginLeft="200dp"
-        android:layout_height="150dp"
-        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
 
+        android:background="#30415D"
+
+        android:gravity="center"
         android:lines="4"
         android:maxLines="4"
         android:text="THINK, Before You Waste Food!!"
-        android:gravity="center"
-        android:background="#30415D"
         android:textColor="#F5F5F5"
+        android:textSize="20dp"
 
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.955"
-        app:layout_constraintHorizontal_bias="0.529"
-        android:layout_marginStart="200dp" />
-
-    <ImageView
-        android:id="@+id/iv11"
-        android:layout_width="200dp"
-        android:layout_height="150dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-
-        android:background="@drawable/kids"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintVertical_bias="0.706" />
 
     <EditText
         android:id="@+id/e33"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Date of birth(dd/mm/yyyy)"
+        android:hint="Contact No.:"
         android:inputType="textPersonName"
+        android:layout_marginLeft="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.232" />
+        app:layout_constraintVertical_bias="0.322" />
 
-    <RadioGroup
-        android:layout_width="0dp"
-        android:layout_height="80dp"
+    <EditText
+        android:id="@+id/e44"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Re-Enter Password:"
+        android:inputType="textPersonName"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498" >
-        <RadioButton
-            android:id="@+id/r11"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_weight="1"
-            android:gravity="bottom"
-            android:text="Male"
-            android:textColor="#000000"
-            android:textSize="20dp" />
+        app:layout_constraintVertical_bias="0.527" />
 
-        <RadioButton
-            android:id="@+id/r22"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="bottom"
-            android:text="Female"
-            android:textColor="#000000"
-            android:textSize="20dp" />
+    <EditText
+        android:id="@+id/e22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Password:"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.423" />
 
-    </RadioGroup>
 
 </android.support.constraint.ConstraintLayout>

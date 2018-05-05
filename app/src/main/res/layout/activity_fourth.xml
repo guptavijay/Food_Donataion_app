@@ -115,7 +115,7 @@
         android:id="@+id/b11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CONTINUE.."
+        android:text="SUBMIT"
         android:textColor="#0B3C5D"
         android:textSize="20dp"
         android:textStyle="bold"
