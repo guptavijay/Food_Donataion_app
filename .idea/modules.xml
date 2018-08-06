@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Food_Donataion_app.iml" filepath="$PROJECT_DIR$/.idea/Food_Donataion_app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Foodsave.iml" filepath="$PROJECT_DIR$/Foodsave.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
