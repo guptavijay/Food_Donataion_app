@@ -14,6 +14,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -26,6 +28,7 @@ import static android.content.DialogInterface.*;
 
 public class MainActivity extends AppCompatActivity {
 ImageView i1;
+TextView t1;
    /* TextView t1;
   //  private DrawerLayout mdrawerlayout;
     protected DrawerLayout mdrawerlayout;
@@ -47,7 +50,8 @@ ImageView i1;
         mToggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
    */   i1=(ImageView)findViewById(R.id.iv11);
-        Handler h=new Handler();
+   t1=(TextView)findViewById(R.id.tv11);
+   /*     Handler h=new Handler();
         h.postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -56,7 +60,27 @@ ImageView i1;
                 MainActivity.this.finish();
             }
         },3000);
-
+*/
+       Animation anim = AnimationUtils.loadAnimation(this,R.anim.transitions);
+       t1.startAnimation(anim);
+       i1.startAnimation(anim);
+       final Intent i = new Intent(this, Firstone.class);
+       Thread t = new Thread(){
+           public void run()
+           {
+               try {
+                   sleep(5000);
+               }
+               catch (InterruptedException e) {
+                   e.printStackTrace();
+               }
+               finally {
+                   startActivity(i);
+                   finish();
+               }
+           }
+       };
+       t.start();
 
     }
 
