@@ -13,6 +13,7 @@ Button b1,b2;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_firstone);
         b1=(Button)findViewById(R.id.b11);
+        getActionBar().hide();
         b2=(Button)findViewById(R.id.b22);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
