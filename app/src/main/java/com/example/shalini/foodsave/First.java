@@ -27,13 +27,13 @@ public class First extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getActionBar().hide();
         setContentView(R.layout.activity_first);
         e1 = (EditText) findViewById(R.id.e11);
         e2 = (EditText) findViewById(R.id.e22);
         b1 = (Button) findViewById(R.id.b11);
         b2 = (Button) findViewById(R.id.b22);
         b3 = (Button) findViewById(R.id.b33);
-        b4 = (ImageButton) findViewById(R.id.ib11);
         mydbpw= new Databasehelperpassword(this);
         mydbun= new Databasehelperusername(this);
         //   Bundle b=getIntent().getExtras();
