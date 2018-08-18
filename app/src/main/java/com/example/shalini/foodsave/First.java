@@ -27,7 +27,7 @@ public class First extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getActionBar().hide();
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_first);
         e1 = (EditText) findViewById(R.id.e11);
         e2 = (EditText) findViewById(R.id.e22);

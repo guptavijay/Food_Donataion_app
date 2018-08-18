@@ -12,8 +12,9 @@ Button b1,b2;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_firstone);
+        getSupportActionBar().hide();
         b1=(Button)findViewById(R.id.b11);
-        getActionBar().hide();
+
         b2=(Button)findViewById(R.id.b22);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override

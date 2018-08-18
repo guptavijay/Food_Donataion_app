@@ -40,7 +40,8 @@ TextView t1;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        getActionBar().hide();
+        getSupportActionBar().hide();
+      //  getActionBar().hide();
     /*    t1=(TextView)findViewById(R.id.t11);
         mdrawerlayout=(DrawerLayout)findViewById(R.id.drawerlayout);
         mtoolbar=(Toolbar)findViewById(R.id.nav_action);
