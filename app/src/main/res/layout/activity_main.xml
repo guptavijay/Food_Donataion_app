@@ -6,7 +6,7 @@
 
     tools:context="com.example.shalini.foodsave.MainActivity"
     android:layout_width="match_parent"
-    android:background="#000000"
+    android:background="#3b5998"
      android:layout_height="match_parent">
 
     <ImageView
@@ -18,7 +18,8 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/main"
+        android:background="@drawable/sharefoodicon"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

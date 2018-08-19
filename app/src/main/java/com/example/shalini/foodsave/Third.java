@@ -33,6 +33,7 @@ EditText e1,e2,e3,e4;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third);
+        getSupportActionBar().hide();
         e1=(EditText)findViewById(R.id.e11);
         e2=(EditText)findViewById(R.id.e22);
         e3=(EditText)findViewById(R.id.e33);
@@ -56,6 +57,7 @@ EditText e1,e2,e3,e4;
              final String s2=e2.getText().toString();                   //password
              final   String s3=e3.getText().toString();                     //contact no
               final  String s4=e4.getText().toString();                //re enter password
+                final String out= "Enter valid contact number!!";
           //    int count=0;
           //      String[] mStringArray = new String[listnumber.size()];
            //     mStringArray = listnumber.toArray(mStringArray);
@@ -80,7 +82,7 @@ EditText e1,e2,e3,e4;
                 }
           */
 
-                    if ( s1.isEmpty() || s2.isEmpty() || s3.isEmpty()  || s3.length()<10 || s4.isEmpty() || s3.length()<10)
+                    if ( s1.isEmpty() || s2.isEmpty() || s3.isEmpty()    || s4.isEmpty() || s3.length()<10)
                     {
                         Toast.makeText(Third.this,"Please Fill All The Details Correctly..!!!", LENGTH_LONG).show();
                     }
