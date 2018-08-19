@@ -53,17 +53,19 @@ public class First extends AppCompatActivity {
 
         String result = sharedpref.getString("initial2", "");           // initially when user open the app then the default value stored in initial is NULL
         String res = "Vijay";
-        if (result.equals(res)) {
+    /*    if (result.equals(res)) {
 
             Intent i = new Intent(First.this, Second.class);
             startActivity(i);
-        } else {
+        } else
+         */
+
 
             b1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     //
-                    editor.putString("initial2","Vijay");       // once user logged in in intiail the value stored is equal to res(vijay)
+                    editor.putString("initial2", "Vijay");       // once user logged in in intiail the value stored is equal to res(vijay)
                     editor.commit();
 
                /*     Bundle b = getIntent().getExtras();
@@ -99,32 +101,28 @@ public class First extends AppCompatActivity {
 
                     String s = e2.getText().toString();        //username that have been entered
                     String s1 = e1.getText().toString();        // passowrd  that have been entered
-                    StringBuffer usernameid= new StringBuffer();    // id at which the username entered is been stored in the database
-                    StringBuffer passwordid= new StringBuffer();    // id at which the password entered is been stored in the database
-                   // now check where the  username exists in the database  with the help of CURSOR >>>>>>>
-                    Cursor res= mydbun.getAllData();
-                    while(res.moveToNext())
-                    {
-                        String currusername= res.getString(1);              // Checking all the usernames one by one from datatbase
-                        String curridusername=res.getString(0);             // id of current username that is checking currently
-                        if(s.equals(currusername))
-                        {
+                    StringBuffer usernameid = new StringBuffer();    // id at which the username entered is been stored in the database
+                    StringBuffer passwordid = new StringBuffer();    // id at which the password entered is been stored in the database
+                    // now check where the  username exists in the database  with the help of CURSOR >>>>>>>
+                    Cursor res = mydbun.getAllData();
+                    while (res.moveToNext()) {
+                        String currusername = res.getString(1);              // Checking all the usernames one by one from datatbase
+                        String curridusername = res.getString(0);             // id of current username that is checking currently
+                        if (s.equals(currusername)) {
                             usernameid.append(curridusername);             // getting the id of the username that has been entered by the user during login
                             break;
                         }
                     }
-                    String uid= usernameid.toString();       //converting string buffer to string (it contain the id of the username entered by the user)
-                    int count =0;
+                    String uid = usernameid.toString();       //converting string buffer to string (it contain the id of the username entered by the user)
+                    int count = 0;
 
-                    Cursor res2=mydbpw.getAllData();
-                    while(res2.moveToNext())
-                    {
-                        String currpasswrd= res2.getString(1);             // checking all the passwords stored in the database one by one
-                        String curridpw= res2.getString(0);
-                        if(curridpw.equals(uid)  && currpasswrd.equals(s1))
-                        {
+                    Cursor res2 = mydbpw.getAllData();
+                    while (res2.moveToNext()) {
+                        String currpasswrd = res2.getString(1);             // checking all the passwords stored in the database one by one
+                        String curridpw = res2.getString(0);
+                        if (curridpw.equals(uid) && currpasswrd.equals(s1)) {
                             count++;
-                             break;
+                            break;
                         }
                     }
 
@@ -132,14 +130,12 @@ public class First extends AppCompatActivity {
                     Toast.makeText(First.this,usernameid.toString(),Toast.LENGTH_LONG).show();
                    Toast.makeText(First.this,passwordid.toString(),Toast.LENGTH_LONG).show();
 */
-                    if(count>0)
-                    {
-                        Intent i=new Intent(First.this,Second.class);
+                    if (count > 0) {
+                        Intent i = new Intent(First.this, Second.class);
+
                         startActivity(i);
-                    }
-                    else
-                    {
-                        Toast.makeText(First.this,"INVALID CREDENTIALS..!!",Toast.LENGTH_LONG).show();
+                    } else {
+                        Toast.makeText(First.this, "INVALID CREDENTIALS..!!", Toast.LENGTH_LONG).show();
                         e2.setText("");
                         e1.setText("");
                     }
@@ -177,6 +173,6 @@ public class First extends AppCompatActivity {
                 }
             });
 
-        }
+        //}
     }
 }

@@ -1,6 +1,8 @@
 package com.example.shalini.foodsave;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telephony.SmsManager;
@@ -51,6 +53,7 @@ public class Eight extends AppCompatActivity {
         t13.setText(e);                        //
         t14.setText(f);
         t15.setText(g);
+       final int cnt=0;
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -72,21 +75,42 @@ public class Eight extends AppCompatActivity {
                 if(phoneNo.length()>0 && s.length()>0)
                 {
                     Toast.makeText(Eight.this,message,Toast.LENGTH_LONG).show();
-                    sendsms(phoneNo,message);
+                    sendsms(phoneNo,message,cnt);
                 }
             }
+            if(cnt>0)
+            {
                 Intent i3= new Intent(Eight.this,Ninth.class);
                 startActivity(i3);
+
+            }
+            else
+            {
+                final AlertDialog.Builder builder=new AlertDialog.Builder(Eight.this);
+                builder.setTitle("Failed!!");
+                builder.setMessage("There is some issue regarding network!! ");
+                builder.setPositiveButton("Continue", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                   dialogInterface.cancel();
+                   Intent i2= new Intent(Eight.this,Second.class);
+                   startActivity(i2);
+                    }
+                });
+                builder.show();
+            }
+
 
             }
         });
     }
 
-    public void sendsms(String phoneNo, String message) {
+    public void sendsms(String phoneNo, String message, int cnt) {
         try {
             SmsManager sms = SmsManager.getDefault();
             sms.sendTextMessage(phoneNo, null, message, null, null);
             Toast.makeText(getApplicationContext(), "SMS SENT", Toast.LENGTH_LONG).show();
+            cnt++;
         } catch (Exception e) {
             Toast.makeText(getApplicationContext(), "SMS FAILED!", Toast.LENGTH_LONG).show();
             e.printStackTrace();
