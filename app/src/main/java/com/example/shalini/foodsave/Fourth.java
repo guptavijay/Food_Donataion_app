@@ -18,6 +18,8 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.Calendar;
 
+import static com.example.shalini.foodsave.R.string.contact;
+
 public class Fourth extends AppCompatActivity {
     TextView t1, t3, t4, t5;
     EditText e1, e2, e3, e4, e5;
@@ -34,7 +36,7 @@ public class Fourth extends AppCompatActivity {
         e2 = (EditText) findViewById(R.id.e22);
         e3 = (EditText) findViewById(R.id.e33);
         e4 = (EditText) findViewById(R.id.e44);
-        e5 = (EditText) findViewById(R.id.e55);
+        e5 = (EditText) findViewById(R.id.e55);   //contact no.
         t4 = (TextView) findViewById(R.id.t44);
         b1 = (Button) findViewById(R.id.b11);
         t5 = (TextView) findViewById(R.id.t55);
@@ -78,7 +80,7 @@ public class Fourth extends AppCompatActivity {
             public void onClick(View v) {
                 //
                 final String s1 = e4.getText().toString();
-                final String s2 = e5.getText().toString();
+                final String s2 = e5.getText().toString();   // contact number
                 final String s3 = e1.getText().toString();
                 final String s4 = e2.getText().toString();
                 final String s5 = e3.getText().toString();
@@ -88,7 +90,10 @@ public class Fourth extends AppCompatActivity {
 
 
                     Toast.makeText(Fourth.this, "Please Fill All the Details!!", Toast.LENGTH_SHORT).show();
-                } else {
+                }
+
+
+                 else {
                     Intent i2= new Intent(Fourth.this,Eight.class);
                     ArrayList<String> l2= (ArrayList<String>)getIntent().getSerializableExtra("arr"); // list of contact numbers
                     i2.putExtra("one",s1);

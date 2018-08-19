@@ -152,9 +152,9 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Send SMS"
-        android:textSize="20dp"
-        android:textColor="#ffffff"
-        android:background="#6D7993"
+
+
+        android:background="@drawable/btnshape"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
