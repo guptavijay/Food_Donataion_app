@@ -17,6 +17,7 @@ public class Firsttwo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_firsttwo);
+        getSupportActionBar().hide();
         t1=(TextView)findViewById(R.id.t11);
         e1=(EditText)findViewById(R.id.e11);
         e2=(EditText)findViewById(R.id.e22);

@@ -3,20 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-
+    android:background="#4169e1"
     android:layout_height="match_parent"
     tools:context="com.example.shalini.foodsave.Third">
 
     <EditText
         android:id="@+id/e11"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:ems="10"
         android:hint="UserName:"
+
         android:inputType="textPersonName"
         android:textColor="#000000"
         android:textSize="20dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:background="@drawable/borderwhite"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -26,63 +29,48 @@
 
     <TextView
         android:id="@+id/t11"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
+
         android:layout_height="40dp"
-        android:background="#D5D5D5"
-        android:text="Enter Details"
-        android:textSize="30dp"
-        android:textColor="#000000"
+        android:background="#4169e1"
         android:gravity="center"
+        android:text="SIGNUP HERE"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.033" />
+        app:layout_constraintVertical_bias="0.108" />
 
     <Button
         android:id="@+id/b11"
-        android:layout_width="70dp"
-        android:layout_height="25dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btnshape"
         android:text="SIGN UP"
-        android:background="#286DA8"
         android:textColor="#F5F5F5"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
 
-        app:layout_constraintVertical_bias="0.619" />
-
-    <TextView
-        android:id="@+id/t22"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-
-        android:background="#30415D"
-
-        android:gravity="center"
-        android:lines="4"
-        android:maxLines="4"
-        android:text="THINK, Before You Waste Food!!"
-        android:textColor="#F5F5F5"
-        android:textSize="20dp"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.706" />
+        app:layout_constraintVertical_bias="0.664" />
 
     <EditText
         android:id="@+id/e33"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:ems="10"
         android:hint="Contact No.:"
         android:inputType="textPersonName"
-        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="7dp"
+        android:background="@drawable/borderwhite"
+        android:layout_marginRight="7dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -93,7 +81,7 @@
     <EditText
         android:id="@+id/e44"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -102,7 +90,10 @@
         android:hint="Re-Enter Password:"
         android:inputType="textPersonName"
         android:textSize="20dp"
-        android:layout_marginLeft="10dp"
+
+        android:layout_marginLeft="7dp"
+        android:background="@drawable/borderwhite"
+        android:layout_marginRight="7dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -113,7 +104,7 @@
     <EditText
         android:id="@+id/e22"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -122,7 +113,9 @@
         android:inputType="textPersonName"
         android:hint="Password:"
         android:textSize="20dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="7dp"
+        android:background="@drawable/borderwhite"
+        android:layout_marginRight="7dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"

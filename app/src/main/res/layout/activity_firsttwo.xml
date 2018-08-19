@@ -7,7 +7,7 @@
     android:background="#4169e1"
     tools:context="com.example.shalini.foodsave.Firsttwo">
 
-    <TextView
+    <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginBottom="8dp"
@@ -15,6 +15,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/main"
+        android:src="@drawable/borderwhite"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/e11"
         app:layout_constraintHorizontal_bias="0.515"
