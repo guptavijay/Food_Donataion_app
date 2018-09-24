@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 public class Eight extends AppCompatActivity {
     TextView t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12,t13,t14,t15;
-    Button b1;
+    Button b1,b2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +37,7 @@ public class Eight extends AppCompatActivity {
         t15=(TextView)findViewById(R.id.t115);
       //  t1=(TextView)findViewById(R.id.t11);
         b1=(Button)findViewById(R.id.b11);
+        b2=(Button)findViewById(R.id.b22);
         Bundle b= getIntent().getExtras();
 
         final String a= b.getString("one");
@@ -78,6 +79,7 @@ public class Eight extends AppCompatActivity {
                     sendsms(phoneNo,message,cnt);
                 }
             }
+
     /*        if(cnt>0)
             {
                 Intent i3= new Intent(Eight.this,Ninth.class);
@@ -101,6 +103,14 @@ public class Eight extends AppCompatActivity {
             }
 */
 
+            }
+        });
+
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(Eight.this,Second.class);
+                startActivity(i);
             }
         });
     }
