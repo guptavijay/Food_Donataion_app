@@ -78,7 +78,7 @@ public class Eight extends AppCompatActivity {
                     sendsms(phoneNo,message,cnt);
                 }
             }
-            if(cnt>0)
+    /*        if(cnt>0)
             {
                 Intent i3= new Intent(Eight.this,Ninth.class);
                 startActivity(i3);
@@ -99,7 +99,7 @@ public class Eight extends AppCompatActivity {
                 });
                 builder.show();
             }
-
+*/
 
             }
         });
